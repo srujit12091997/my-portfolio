@@ -144,51 +144,6 @@ section {
     text-align: left;
 }
 
-/* Experience Section */
-.timeline {
-    display: flex;
-    flex-direction: column;
-    gap: 30px;
-}
-
-.timeline-item {
-    background-color: #fff;
-    padding: 20px;
-    border-radius: 10px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.05);
-}
-
-/* Contact Section */
-form {
-    max-width: 600px;
-    margin: 0 auto;
-    display: flex;
-    flex-direction: column;
-    gap: 15px;
-}
-
-input, textarea {
-    padding: 10px;
-    border: 1px solid #ddd;
-    border-radius: 5px;
-    width: 100%;
-}
-
-button {
-    padding: 10px 15px;
-    background-color: #6a11cb;
-    color: white;
-    border: none;
-    cursor: pointer;
-    border-radius: 5px;
-    transition: background-color 0.3s ease;
-}
-
-button:hover {
-    background-color: #5b10b8;
-    transform: scale(1.05);
-}
-
 /* Dark Mode Styles */
 .dark-mode {
     background-color: #2d2d2d;
