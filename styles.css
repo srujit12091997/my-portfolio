@@ -103,45 +103,27 @@ section {
 }
 
 /* Skills Section */
-.skill-grid {
+.skills-container {
     display: flex;
-    justify-content: center;
-    gap: 20px;
+    justify-content: space-around;
     flex-wrap: wrap;
 }
 
-.skill-categories ul {
-    list-style: none;
-}
-
-.skill-categories ul li {
-    padding: 10px 0;
-    text-align: left;
-}
-
-/* Projects Section */
-.project-grid {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-    gap: 20px;
-}
-
-.project-tile {
-    background-color: #fff;
+.skill-card {
+    background-color: white;
     padding: 20px;
     border-radius: 10px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.05);
-    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    width: 240px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    text-align: center;
 }
 
-.project-tile:hover {
-    transform: translateY(-10px);
-    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1);
-}
-
-.project-tile h3, .project-tile p {
-    margin: 0;
-    text-align: left;
+.timeline-item {
+    background-color: white;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    margin-bottom: 20px;
 }
 
 /* Contact Section */
@@ -211,7 +193,7 @@ button:hover {
     flex-direction: column;
   }
 
-  .skill-grid {
+  .skills-container {
     flex-direction: column;
   }
 
