@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Clean Portfolio - Srujit Varasala</title>
+  <link rel="stylesheet" href="styles.css">
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+</head>
+<body>
+  <!-- Scroll Progress Bar -->
+  <div id="scrollBar"></div>
+
+  <!-- Navbar Section -->
+  <nav id="navbar">
+    <ul>
+      <li><a href="#welcome-section" class="active">Home</a></li>
+      <li><a href="#projects">Projects</a></li>
+      <li><a href="#skills">Skills</a></li>
+      <li><a href="#experience">Experience</a></li>
+      <li><a href="#contact">Contact</a></li>
+    </ul>
+  </nav>
+
+  <!-- Welcome Section -->
+  <section id="welcome-section">
+    <div class="welcome-content">
+      <h1>Hi, I'm Srujit Varasala</h1>
+      <p>Big Data Engineer | Full Stack Developer</p>
+      <a href="#projects" class="cta-btn">View My Work</a>
+    </div>
+  </section>
+
+  <!-- Skills Section -->
+  <section id="skills">
+    <h2>Skills</h2>
+    <div class="skill-grid">
+      <div class="skill-item">
+        <i class="fab fa-python"></i>
+        <h3>Python</h3>
+      </div>
+      <div class="skill-item">
+        <i class="fab fa-java"></i>
+        <h3>Java</h3>
+      </div>
+      <div class="skill-item">
+        <i class="fab fa-aws"></i>
+        <h3>AWS</h3>
+      </div>
+      <div class="skill-item">
+        <i class="fab fa-node-js"></i>
+        <h3>Node.js</h3>
+      </div>
+    </div>
+  </section>
+
+  <!-- Projects Section -->
+  <section id="projects">
+    <h2>Projects</h2>
+    <div class="project-grid">
+      <div class="project-tile">
+        <a href="https://github.com/srujit12091997/RealTime-IoT-Insights-Hub" target="_blank">
+          <h3>Real-Time IoT Insights Hub</h3>
+          <p>Apache Kafka, Spark Streaming</p>
+        </a>
+      </div>
+      <div class="project-tile">
+        <a href="https://github.com/srujit12091997/Places-of-Interest" target="_blank">
+          <h3>Places of Interest</h3>
+          <p>Apache Spark, Neo4j, MongoDB</p>
+        </a>
+      </div>
+      <div class="project-tile">
+        <a href="https://github.com/srujit12091997/Web-Data-Scraping-Analysis" target="_blank">
+          <h3>Web Data Scraping</h3>
+          <p>Python, BeautifulSoup</p>
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- Experience Section -->
+  <section id="experience">
+    <h2>Experience</h2>
+    <div class="timeline">
+      <div class="timeline-item">
+        <h3>Big Data Engineer at Jio Platforms Limited</h3>
+        <p>July 2020 - December 2022 | Bengaluru, India</p>
+        <ul>
+          <li>Developed scalable data pipelines for 10M+ records daily.</li>
+          <li>Optimized data processing speed by 40% using Spark.</li>
+        </ul>
+      </div>
+      <div class="timeline-item">
+        <h3>Full Stack Developer Intern at Techniki</h3>
+        <p>Aug 2019 - Dec 2019 | Hyderabad, India</p>
+        <ul>
+          <li>Built full-stack applications using HTML, CSS, JavaScript.</li>
+          <li>Improved backend performance and server load by 15%.</li>
+        </ul>
+      </div>
+    </div>
+  </section>
+
+  <!-- Contact Section -->
+  <section id="contact">
+    <h2>Contact Me</h2>
+    <form action="https://formspree.io/f/{form_id}" method="POST">
+      <input type="text" name="name" placeholder="Your Name" required>
+      <input type="email" name="_replyto" placeholder="Your Email" required>
+      <textarea name="message" placeholder="Your Message" required></textarea>
+      <button type="submit">Send Message</button>
+    </form>
+  </section>
+
+  <!-- Dark Mode Toggle Button -->
+  <button id="toggle-dark-mode">Toggle Dark Mode</button>
+
+  <!-- JavaScript File -->
+  <script src="script.js"></script>
+</body>
+</html>
