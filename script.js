@@ -43,5 +43,7 @@ darkModeToggle.addEventListener("click", () => {
 });
 
 // Set dark mode by default
-body.classList.add("dark-mode");
-localStorage.setItem("theme", "dark");
+const savedTheme = localStorage.getItem("theme");
+if (savedTheme && savedTheme === "dark") {
+    body.classList.add("dark-mode");
+}

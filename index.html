@@ -16,14 +16,17 @@
   <nav id="navbar">
     <ul>
       <li><a href="#welcome-section" class="active">Home</a></li>
+      <li><a href="#about-me">About</a></li>
       <li><a href="#projects">Projects</a></li>
       <li><a href="#skills">Skills</a></li>
       <li><a href="#experience">Experience</a></li>
+      <li><a href="#education">Education</a></li>
+      <li><a href="#resume">Resume</a></li>
       <li><a href="#contact">Contact</a></li>
     </ul>
   </nav>
 
-  <!-- Welcome Section -->
+  <!-- Welcome & About Me Section -->
   <section id="welcome-section">
     <div class="welcome-content">
       <h1>Hi, I'm Srujit Varasala</h1>
@@ -32,41 +35,15 @@
     </div>
   </section>
 
-  <!-- Skills Section -->
-  <section id="skills">
-    <h2>Skills</h2>
-    <div class="skill-grid">
-      <div class="skill-item">
-        <a href="https://www.python.org/doc/" target="_blank">
-          <i class="fab fa-python"></i>
-          <h3>Python</h3>
-        </a>
-      </div>
-      <div class="skill-item">
-        <a href="https://docs.oracle.com/javase/tutorial/" target="_blank">
-          <i class="fab fa-java"></i>
-          <h3>Java</h3>
-        </a>
-      </div>
-      <div class="skill-item">
-        <a href="https://docs.docker.com/" target="_blank">
-          <i class="fab fa-docker"></i>
-          <h3>Docker</h3>
-        </a>
-      </div>
-      <div class="skill-item">
-        <a href="https://nodejs.org/en/docs/" target="_blank">
-          <i class="fab fa-node-js"></i>
-          <h3>Node.js</h3>
-        </a>
-      </div>
-      <div class="skill-item">
-        <a href="https://aws.amazon.com/documentation/" target="_blank">
-          <i class="fab fa-aws"></i>
-          <h3>AWS</h3>
-        </a>
-      </div>
-    </div>
+  <section id="about-me">
+    <h2>About Me</h2>
+    <p>
+      I am a passionate Big Data Engineer and Full Stack Developer with experience in developing scalable applications and data-driven platforms. With expertise in building real-time data processing systems, I focus on optimizing performance and ensuring scalability. 
+      My skillset spans across various technologies in frontend and backend development, data engineering, and cloud platforms.
+    </p>
+    <p>
+      I am currently pursuing my Master's degree in Computer Science at NJIT and have previously worked as a Big Data Engineer at Jio Platforms Limited. My work involves developing robust pipelines, designing scalable systems, and solving complex data challenges.
+    </p>
   </section>
 
   <!-- Projects Section -->
@@ -74,26 +51,60 @@
     <h2>Projects</h2>
     <div class="project-grid">
       <div class="project-tile">
-        <a href="https://github.com/srujit12091997/RealTime-IoT-Insights-Hub" target="_blank">
-          <h3>Real-Time IoT Insights Hub</h3>
-          <p>Developed a real-time data streaming platform using Kafka and Spark, optimizing data latency by 30%.</p>
-          <p><a href="https://github.com/srujit12091997/RealTime-IoT-Insights-Hub" target="_blank">View Code on GitHub</a></p>
-        </a>
+        <h3>Real-Time IoT Insights Hub</h3>
+        <p>Developed a real-time data streaming platform using Kafka and Spark, reducing latency by 30%.</p>
+        <p><strong>Technologies:</strong> Apache Kafka, Spark Streaming, Python</p>
+        <p><a href="https://github.com/srujit12091997/RealTime-IoT-Insights-Hub" target="_blank">View Code on GitHub</a></p>
       </div>
       <div class="project-tile">
-        <a href="https://github.com/srujit12091997/Places-of-Interest" target="_blank">
-          <h3>Places of Interest</h3>
-          <p>Processed over 500GB of geo-location data using Spark, improving real-time insights generation by 20%.</p>
-          <p><a href="https://github.com/srujit12091997/Places-of-Interest" target="_blank">View Code on GitHub</a></p>
-        </a>
+        <h3>Places of Interest</h3>
+        <p>Processed over 500GB of geo-location data using Spark, improving real-time insights generation by 20%.</p>
+        <p><strong>Technologies:</strong> Apache Spark, Neo4j, MongoDB</p>
+        <p><a href="https://github.com/srujit12091997/Places-of-Interest" target="_blank">View Code on GitHub</a></p>
       </div>
       <div class="project-tile">
-        <a href="https://github.com/srujit12091997/Web-Data-Scraping-Analysis" target="_blank">
-          <h3>Web Data Scraping</h3>
-          <p>Built a Python-based scraper and processed 1TB of data using Hadoop, reducing data processing time by 50%.</p>
-          <p><a href="https://github.com/srujit12091997/Web-Data-Scraping-Analysis" target="_blank">View Code on GitHub</a></p>
-        </a>
+        <h3>Web Data Scraping</h3>
+        <p>Built a Python-based scraper and processed 1TB of data using Hadoop, reducing data processing time by 50%.</p>
+        <p><strong>Technologies:</strong> Python, BeautifulSoup, Hadoop</p>
+        <p><a href="https://github.com/srujit12091997/Web-Data-Scraping-Analysis" target="_blank">View Code on GitHub</a></p>
       </div>
+    </div>
+  </section>
+
+  <!-- Skills Section -->
+  <section id="skills">
+    <h2>Skills</h2>
+    <div class="skill-categories">
+      <h3>Frontend</h3>
+      <ul>
+        <li>HTML</li>
+        <li>CSS</li>
+        <li>JavaScript</li>
+        <li>React.js</li>
+      </ul>
+
+      <h3>Backend</h3>
+      <ul>
+        <li>Node.js</li>
+        <li>Python</li>
+        <li>Java</li>
+        <li>Spring Framework</li>
+      </ul>
+
+      <h3>Databases</h3>
+      <ul>
+        <li>SQL</li>
+        <li>MongoDB</li>
+        <li>PostgreSQL</li>
+      </ul>
+
+      <h3>DevOps</h3>
+      <ul>
+        <li>AWS</li>
+        <li>Docker</li>
+        <li>CI/CD</li>
+        <li>Kubernetes</li>
+      </ul>
     </div>
   </section>
 
@@ -138,9 +149,19 @@
     </div>
   </section>
 
+  <!-- Resume Section -->
+  <section id="resume">
+    <h2>Resume</h2>
+    <p>Click the button below to download my latest resume.</p>
+    <a href="resume.pdf" download class="cta-btn">Download Resume</a>
+  </section>
+
   <!-- Contact Section -->
   <section id="contact">
     <h2>Contact Me</h2>
+    <p>Feel free to get in touch using the form below or via email at <a href="mailto:srujit@example.com">srujit@example.com</a>.</p>
+    <p>Find me on <a href="https://www.linkedin.com/in/srujitvarasala/" target="_blank">LinkedIn</a>.</p>
+
     <form action="https://formspree.io/f/YOUR_FORM_ID" method="POST">
       <input type="text" name="name" placeholder="Your Name" required>
       <input type="email" name="_replyto" placeholder="Your Email" required>
