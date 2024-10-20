@@ -52,4 +52,4 @@ Here are some of the featured projects on this portfolio:
 This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
 
 ## Contact
-Feel free to reach out to me via the contact form on my portfolio website, or email me at [your-email@example.com].
+Feel free to reach out to me via the contact form on my portfolio website, or email me at [Srujit.v@gmail.com].
