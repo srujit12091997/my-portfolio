@@ -1,49 +1,37 @@
-// Scroll progress bar
-window.onscroll = function() {
-    scrollProgress();
-};
+document.addEventListener('DOMContentLoaded', function () {
+    const navLinks = document.querySelectorAll('nav a[href^="#"]'); // Select all nav links
 
-function scrollProgress() {
-    const winScroll = document.body.scrollTop || document.documentElement.scrollTop;
-    const height = document.documentElement.scrollHeight - document.documentElement.clientHeight;
-    const scrolled = (winScroll / height) * 100;
-    document.getElementById("scrollBar").style.width = scrolled + "%";
-}
+    navLinks.forEach(link => {
+        link.addEventListener('click', function (e) {
+            e.preventDefault();
+            let targetId = this.getAttribute('href');
+            let targetSection = document.querySelector(targetId);
 
-// Active section highlight in navbar
-const sections = document.querySelectorAll("section");
-const navLinks = document.querySelectorAll("#navbar ul li a");
+            // Remove active class from all sections
+            document.querySelectorAll('section').forEach(section => {
+                section.classList.add('hidden');
+            });
 
-window.addEventListener("scroll", () => {
-    let current = "";
+            // Add active class to target section
+            targetSection.classList.remove('hidden');
 
-    sections.forEach((section) => {
-        const sectionTop = section.offsetTop;
-        if (pageYOffset >= sectionTop - 60) {
-            current = section.getAttribute("id");
-        }
+            // Scroll to the target section smoothly
+            targetSection.scrollIntoView({ behavior: 'smooth', block: 'start' });
+        });
     });
 
-    navLinks.forEach((link) => {
-        link.classList.remove("active");
-        if (link.getAttribute("href").includes(current)) {
-            link.classList.add("active");
-        }
+    // Initial active section
+    document.getElementById('home').classList.remove('hidden');
+});
+
+function showSection(sectionId) {
+    // Hide all sections
+    const sections = document.querySelectorAll('section');
+    sections.forEach(section => {
+        section.classList.add('hidden');
     });
-});
 
-// Dark Mode Toggle
-const darkModeToggle = document.getElementById("toggle-dark-mode");
-const body = document.body;
-
-darkModeToggle.addEventListener("click", () => {
-    body.classList.toggle("dark-mode");
-    const theme = body.classList.contains("dark-mode") ? "dark" : "light";
-    localStorage.setItem("theme", theme);
-});
-
-// Set dark mode by default
-const savedTheme = localStorage.getItem("theme");
-if (savedTheme && savedTheme === "dark") {
-    body.classList.add("dark-mode");
+    // Show the selected section
+    const selectedSection = document.getElementById(sectionId);
+    selectedSection.classList.remove('hidden');
 }
