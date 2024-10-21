@@ -1,42 +1,83 @@
-/* Existing styles... */
+body, html {
+    margin: 0;
+    padding: 0;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; /* Modern and readable font */
+    background: #f4f4f4; /* Light grey background for a lighter theme */
+    color: #333; /* Dark grey text for better readability */
+    line-height: 1.6; /* More space between lines */
+}
+
 .navbar {
     display: flex;
     justify-content: space-between;
-    padding: 20px;
-    background: #2c3e50; /* Dark blue background for the navbar */
-    flex-wrap: wrap; /* Allows navbar items to wrap onto the next line */
+    align-items: center;
+    padding: 20px 40px; /* More padding for better spacing */
+    background: #007BFF; /* A solid blue background */
 }
 
 .navbar a, .footer a {
-    color: #3498db; /* Default link color, blue */
+    color: white;
     text-decoration: none;
-    margin: 0 10px;
-    transition: color 0.3s, text-decoration 0.3s; /* Smooth transitions for color and text decoration */
+    margin: 0 15px; /* More margin for better spacing */
+    font-size: 16px; /* Larger font size for easier reading */
+    padding: 5px 10px; /* Padding makes links easier to click */
+    border-radius: 5px; /* Rounded corners for a modern look */
+}
+
+.navbar a:hover, .footer a:hover {
+    background: #0056b3; /* Darker blue on hover for better visual feedback */
+    text-decoration: none; /* Removing underline for a cleaner look */
 }
 
 .navbar .name {
-    font-weight: bold;
+    font-weight: 600;
+    color: white; /* Ensuring the name stands out */
     font-size: 24px;
-    color: #f39c12; /* Bright orange color for the name for emphasis */
-    flex-basis: 100%; /* Forces the name to occupy the full width of the line */
 }
 
 section {
-    padding: 40px;
-    background-color: #1e1e1e; /* Slightly lighter dark background for sections */
-    max-width: 1200px; /* Sets a max-width for sections */
-    margin: auto; /* Centers sections */
+    padding: 60px 40px; /* Increased padding for better spacing */
+    background-color: #fff; /* White background for each section */
+    margin: 8px 0; /* Adds margin to the top and bottom of each section */
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1); /* Subtle shadows for depth */
+    border-radius: 8px; /* Rounded corners for a soft, modern look */
 }
 
-/* Responsive adjustments */
-@media (max-width: 768px) {
-    .navbar a {
-        font-size: 14px; /* Smaller font size for links on smaller screens */
-    }
-
-    .navbar .name {
-        font-size: 20px; /* Smaller font size for the name on smaller screens */
-    }
+.buttons button {
+    background-color: #007BFF; /* Blue background to match the theme */
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    font-size: 16px;
+    border-radius: 5px; /* Rounded buttons */
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1); /* Consistent with section styling */
 }
 
-/* Continue with existing styles... */
+.buttons button:hover {
+    background-color: #0056b3; /* Consistency in interaction states */
+}
+
+ul {
+    list-style-type: none; /* Removes bullets */
+    padding-left: 0; /* Aligns text nicely */
+}
+
+ul li {
+    padding-bottom: 10px; /* Better spacing between list items */
+}
+
+footer {
+    text-align: center;
+    padding: 20px;
+    background-color: #007BFF;
+    color: white;
+    margin-top: 20px; /* Ensures footer is distinct from content */
+}
+
+.hidden {
+    display: none;
+}
+
+.active {
+    display: block;
+}
