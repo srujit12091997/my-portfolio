@@ -9,88 +9,123 @@
 <body>
     <header>
         <div class="navbar">
-            <div class="name">Srujit Varasala</div>
+            <span class="logo">Srujit Varasala</span>
             <nav>
                 <a href="#home">Home</a>
-                <a href="#skills">Skills</a>
                 <a href="#experience">Experience</a>
                 <a href="#projects">Projects</a>
                 <a href="#education">Education</a>
-                <a href="#contact">Contact</a>
+                <a href="#about">About Me</a>
+                <button class="btn hire-me">Hire me</button>
             </nav>
         </div>
     </header>
 
     <main>
         <section id="home">
-            <h1>Big Data Engineer & Full Stack Developer</h1>
-            <p>I am a Big Data Engineer with almost 3 years of experience, specializing in designing, developing, and optimizing large-scale data pipelines and ETL processes.</p>
+            <h1>Why hire me?</h1>
+            <p>I am a driven and knowledgeable Big Data Engineer with a proven track record in designing, developing, and optimizing large-scale data solutions. Skilled in leveraging both backend and frontend technologies to create responsive and efficient applications.</p>
             <div class="buttons">
-                <button onclick="showSection('skills')">Skills</button>
-                <button onclick="showSection('experience')">Experience</button>
-                <button onclick="showSection('projects')">Projects</button>
-                <button onclick="showSection('education')">Education</button>
+                <button onclick="toggleSection('experience')">Experience</button>
+                <button onclick="toggleSection('projects')">Projects</button>
+                <button onclick="toggleSection('education')">Education</button>
+                <button onclick="toggleSection('about')">About me</button>
             </div>
         </section>
 
-        <section id="skills" class="hidden">
-            <h2>Technical Skills</h2>
+        <section id="experience" class="info hidden">
+            <h2>My Experience</h2>
             <ul>
-                <li><strong>Big Data Technologies:</strong> Apache Spark, Hadoop, HDFS, Airflow, ETL pipelines, MongoDB, Neo4j</li>
-                <li><strong>Programming Languages:</strong> Python, PySpark, Scala, Java</li>
-                <li><strong>Databases:</strong> SQL, PostgreSQL, MongoDB, Neo4j</li>
-                <li><strong>Cloud & DevOps:</strong> AWS, Docker, CI/CD pipelines, Git, GitHub</li>
-                <li><strong>Data Processing Tools:</strong> Apache Kafka, Spark Streaming</li>
-                <li><strong>Testing & Automation:</strong> Unit Testing (JUnit, PyTest)</li>
+                <li><strong>Big Data Engineer | Jio Platforms Limited | July 2020 - Dec 2022</strong>
+                    <ul>
+                        <li>Designed and developed scalable data pipelines using Apache Spark, Python, and Spark Scala, processing over 10 million records daily.</li>
+                        <li>Developed and deployed Jio Maps, improving navigation accuracy by 20%.</li>
+                        <li>Built and maintained batch processing systems for 1TB of data daily using Hadoop, HDFS, and Airflow.</li>
+                    </ul>
+                </li>
+                <li><strong>Full Stack Developer Intern | Techniki Services | Aug 2019 - Dec 2019</strong>
+                    <ul>
+                        <li>Developed and maintained web applications using HTML, CSS, JavaScript, and Bootstrap.</li>
+                        <li>Reduced server load by 15% through backend optimization.</li>
+                    </ul>
+                </li>
+                <li><strong>Full Stack Web Development Intern | DLK Technologies | Nov 2018 - Dec 2018</strong>
+                    <ul>
+                        <li>Developed and maintained full-stack web applications using Django, improving overall performance and usability for client websites.</li>
+                        <li>Reduced database query times by 20% and increased mobile compatibility by 30%.</li>
+                    </ul>
+                </li>
             </ul>
         </section>
 
-        <section id="experience" class="hidden">
-            <h2>Experience</h2>
-            <div class="experience">
-                <h3>Big Data Engineer | Jio Platforms Limited | July 2020 - Dec 2022</h3>
-                <ul>
-                    <li>Designed and developed scalable data pipelines using Apache Spark, Python, and Spark Scala.</li>
-                    <li>Processed over 10 million records daily and improved processing time by 40%.</li>
-                    <li>Developed and deployed Jio Maps, improving navigation accuracy by 20%.</li>
-                </ul>
+        <section id="projects" class="info hidden">
+            <h2>My Projects</h2>
+            <ul>
+                <li><strong>Real-Time IoT Insights Hub (March 2023 - June 2023)</strong>
+                    <ul>
+                        <li>Developed a real-time data streaming platform using Apache Kafka and Spark Streaming, processing over 2TB of data daily.</li>
+                        <li>Optimized the streaming architecture, reducing data processing latency by 30%.</li>
+                    </ul>
+                </li>
+                <li><strong>Places of Interest (Jan 2023 - May 2023)</strong>
+                    <ul>
+                        <li>Built a data pipeline for real-time location-based insights using Apache Spark, Neo4j, and MongoDB.</li>
+                    </ul>
+                </li>
+                <li><strong>Web Data Scraping and Analysis (Sept 2020)</strong>
+                    <ul>
+                        <li>Developed a Python-based web scraper and processed over 1TB of unstructured data using Hadoop MapReduce.</li>
+                    </ul>
+                </li>
+            </ul>
+        </section>
 
-                <h3>Full Stack Developer Intern | Techniki Services | Aug 2019 - Dec 2019</h3>
-                <ul>
-                    <li>Developed and maintained web applications using HTML, CSS, JavaScript, and Bootstrap.</li>
-                    <li>Improved backend logic with Java, reducing server load by 15%.</li>
-                    <li>Led deployment using Docker and CI/CD, reducing deployment time by 50%.</li>
-                </ul>
+        <section id="education" class="info hidden">
+            <h2>My Education</h2>
+            <ul>
+                <li><strong>Master of Science in Computer Science</strong> | New Jersey Institute of Technology | Jan 2023 - Present | CGPA: 3.0</li>
+                <li><strong>Bachelor of Technology in Computer Science</strong> | SRM Institute of Science and Technology | Aug 2016 - May 2020 | CGPA: 3.2</li>
+            </ul>
+        </section>
 
-                <h3>Full Stack Web Development Intern | DLK Technologies Pvt. Ltd. | Nov 2018 - Dec 2018</h3>
-                <ul>
-                    <li>Developed and maintained full-stack web applications using Django.</li>
-                    <li>Improved database query times by 20% and reduced page load time by 25%.</li>
-                </ul>
+        <section id="about" class="info hidden">
+            <div class="about-container">
+                <h2>About Me</h2>
+                <p>I am a driven and knowledgeable Big Data Engineer with a proven track record in designing, developing, and optimizing large-scale data solutions. Skilled in leveraging both backend and frontend technologies to create responsive and efficient applications.</p>
+                <div class="about-details">
+                    <div class="about-row">
+                        <strong>Name:</strong>
+                        <span>Srujit Varasala</span>
+                    </div>
+                    <div class="about-row">
+                        <strong>Phone:</strong>
+                        <span>(+1) 862-237-5382</span>
+                    </div>
+                    <div class="about-row">
+                        <strong>Experience:</strong>
+                        <span>3 years</span>
+                    </div>
+                    <div class="about-row">
+                        <strong>Nationality:</strong>
+                        <span>Indian</span>
+                    </div>
+                    <div class="about-row">
+                        <strong>Email:</strong>
+                        <span><a href="mailto:srujit.v@gmail.com">srujit.v@gmail.com</a></span>
+                    </div>
+                    <div class="about-row">
+                        <strong>Languages:</strong>
+                        <span>English, Telugu, Hindi, Kannada</span>
+                    </div>
+                </div>
             </div>
-        </section>
-
-        <section id="projects" class="hidden">
-            <h2>Projects</h2>
-            <ul>
-                <li><strong>Real-Time IoT Insights Hub (March 2023 - June 2023):</strong> Developed a real-time data streaming platform using Apache Kafka and Spark Streaming, processing over 2TB of data daily.</li>
-                <li><strong>Places of Interest (Jan 2023 - May 2023):</strong> Built a data pipeline for real-time location-based insights using Apache Spark, Neo4j, and MongoDB.</li>
-                <li><strong>Web Data Scraping and Analysis (Sept 2020):</strong> Developed a Python-based web scraper using BeautifulSoup and processed over 1TB of unstructured data using Hadoop MapReduce.</li>
-            </ul>
-        </section>
-
-        <section id="education" class="hidden">
-            <h2>Education</h2>
-            <ul>
-                <li><strong>Master of Science in Computer Science:</strong> New Jersey Institute of Technology, Jan 2023 - Present, CGPA: 3.0</li>
-                <li><strong>Bachelor of Technology in Computer Science and Engineering:</strong> SRM Institute of Science and Technology, Aug 2016 - May 2020, CGPA: 3.2</li>
-            </ul>
         </section>
     </main>
 
     <footer>
-        <p>Contact: +1 862-237-5382 | <a href="mailto:srujit.v@gmail.com">srujit.v@gmail.com</a></p>
-        <p><a href="https://linkedin.com/in/srujitvarasala/" target="_blank">LinkedIn</a> | <a href="https://github.com/srujit12091997" target="_blank">GitHub</a></p>
+      <p>&copy; 2024 Srujit Varasala. All rights reserved.</p>
+
+        <p><a href="mailto:srujit.v@gmail.com">srujit.v@gmail.com</a></p>
     </footer>
 
     <script src="script.js"></script>

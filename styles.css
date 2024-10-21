@@ -1,83 +1,95 @@
 body, html {
     margin: 0;
     padding: 0;
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; /* Modern and readable font */
-    background: #f4f4f4; /* Light grey background for a lighter theme */
-    color: #333; /* Dark grey text for better readability */
-    line-height: 1.6; /* More space between lines */
+    font-family: Arial, sans-serif;
+    background: #121212;
+    color: #fff;
 }
 
 .navbar {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 20px 40px; /* More padding for better spacing */
-    background: #007BFF; /* A solid blue background */
+    padding: 20px;
+    background-color: #333;
 }
 
-.navbar a, .footer a {
-    color: white;
+.navbar a, .navbar button {
+    color: #fff;
     text-decoration: none;
-    margin: 0 15px; /* More margin for better spacing */
-    font-size: 16px; /* Larger font size for easier reading */
-    padding: 5px 10px; /* Padding makes links easier to click */
-    border-radius: 5px; /* Rounded corners for a modern look */
+    margin-right: 20px;
+    padding: 10px;
+    border: none;
+    background: none;
+    cursor: pointer;
 }
 
-.navbar a:hover, .footer a:hover {
-    background: #0056b3; /* Darker blue on hover for better visual feedback */
-    text-decoration: none; /* Removing underline for a cleaner look */
+.navbar button.hire-me {
+    background-color: #4CAF50;
+    border-radius: 5px;
 }
 
-.navbar .name {
-    font-weight: 600;
-    color: white; /* Ensuring the name stands out */
+.logo {
     font-size: 24px;
+    color: #0f0;
 }
 
 section {
-    padding: 60px 40px; /* Increased padding for better spacing */
-    background-color: #fff; /* White background for each section */
-    margin: 8px 0; /* Adds margin to the top and bottom of each section */
-    box-shadow: 0 2px 5px rgba(0,0,0,0.1); /* Subtle shadows for depth */
-    border-radius: 8px; /* Rounded corners for a soft, modern look */
+    padding: 20px;
+    border-bottom: 1px solid #444;
 }
 
 .buttons button {
-    background-color: #007BFF; /* Blue background to match the theme */
-    color: white;
+    background-color: #555;
+    color: #fff;
     border: none;
     padding: 10px 20px;
-    font-size: 16px;
-    border-radius: 5px; /* Rounded buttons */
-    box-shadow: 0 2px 5px rgba(0,0,0,0.1); /* Consistent with section styling */
+    margin-right: 10px;
+    cursor: pointer;
 }
 
 .buttons button:hover {
-    background-color: #0056b3; /* Consistency in interaction states */
-}
-
-ul {
-    list-style-type: none; /* Removes bullets */
-    padding-left: 0; /* Aligns text nicely */
-}
-
-ul li {
-    padding-bottom: 10px; /* Better spacing between list items */
-}
-
-footer {
-    text-align: center;
-    padding: 20px;
-    background-color: #007BFF;
-    color: white;
-    margin-top: 20px; /* Ensures footer is distinct from content */
+    background-color: #777;
 }
 
 .hidden {
     display: none;
 }
 
-.active {
-    display: block;
+.info {
+    padding: 20px;
+    margin-top: 10px;
+}
+
+.about-container {
+    display: flex;
+    flex-direction: column;
+}
+
+.about-details {
+    margin-top: 20px;
+}
+
+.about-row {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 10px;
+}
+
+.about-row strong {
+    margin-right: 10px;
+}
+
+a {
+    color: #4CAF50; /* Color for links to match the button color */
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+footer {
+    text-align: center;
+    padding: 10px;
+    background-color: #333;
 }
