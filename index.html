@@ -2,120 +2,71 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Srujit Varasala - Portfolio</title>
+    <meta viewport="width=device-width, initial-scale=1.0">
+    <title>Srujit Varasala</title>
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-    <!-- Header with Navigation -->
-    <header class="header">
-        <div class="navbar">
-            <span class="logo">Srujit Varasala</span>
-            <nav>
-                <a href="#home">Home</a>
-                <a href="#experience">Experience</a>
-                <a href="#projects">Projects</a>
-                <a href="#education">Education</a>
-                <a href="#about">About</a>
-            </nav>
-        </div>
+    <header>
+        <div class="logo">Srujit Varasala</div>
+        <nav>
+            <a href="#home">Home</a>
+            <a href="#services">Services</a>
+            <a href="#resume">Resume</a>
+            <a href="#work">Work</a>
+            <a href="#contact">Contact</a>
+        </nav>
     </header>
-
-    <!-- Main Content Area -->
     <main>
-        <!-- Home Section -->
-        <section id="home" class="active">
-            <h1>Welcome to My Portfolio</h1>
-            <p>Discover my professional journey and projects below.</p>
-        </section>
-
-        <!-- Experience Section -->
-        <section id="experience" class="info hidden">
-            <h2>My Experience</h2>
-            <ul>
-                <li><strong>Big Data Engineer | Jio Platforms Limited | July 2020 - December 2022</strong></li>
+        <div class="left-panel">
+            <h1>Why hire me?</h1>
+            <p>Big Data Engineer with almost 3 years of experience in designing, developing, and optimizing large-scale data pipelines and ETL processes. Proficient in Apache Spark, Hadoop, and cloud technologies.</p>
+            <button onclick="showSection('experience')">Experience</button>
+            <button onclick="showSection('education')">Education</button>
+            <button onclick="showSection('skills')">Skills</button>
+            <button class="about-me" onclick="showSection('about')">About me</button>
+        </div>
+        <div class="right-panel">
+            <div id="experience" class="section">
+                <h1>Experience</h1>
                 <ul>
-                    <li>Designed scalable data pipelines using Apache Spark, Python, and Spark Scala to process 10+ million records daily.</li>
-                    <li>Improved data accuracy by 30% through automated data quality checks and data cleansing routines.</li>
-                    <li>Developed Jio Maps, improving navigation accuracy by 20% through 1B+ places of interest integration.</li>
-                    <li>Maintained batch processing systems for 1TB of data daily using Apache Hadoop, HDFS, and Airflow.</li>
+                    <li><strong>Big Data Engineer, Jio Platforms Limited</strong> (July 2020 – December 2022)</li>
+                    <li>Designed and developed scalable data pipelines using Apache Spark, Python, and Spark Scala to process over 10 million records daily.</li>
+                    <li>Developed Jio Maps and improved navigation accuracy by 20%.</li>
                 </ul>
-                <li><strong>Full Stack Developer Intern | Techniki Services Startup | Aug 2019 - Dec 2019</strong></li>
+            </div>
+            <div id="education" class="section hidden">
+                <h1>Education</h1>
                 <ul>
-                    <li>Built web applications using HTML, CSS, JavaScript, and Bootstrap, enhancing cross-browser compatibility by 30%.</li>
-                    <li>Optimized backend using Java, reducing server load by 15%.</li>
-                    <li>Led deployment using Docker and CI/CD, reducing deployment time by 50%.</li>
+                    <li><strong>M.Sc. in Computer Science</strong>, New Jersey Institute of Technology (2023 – Present)</li>
+                    <li><strong>B.Tech in Computer Science</strong>, SRM Institute of Science and Technology (2016 – 2020)</li>
                 </ul>
-                <li><strong>Full Stack Web Development Intern | DLK Technologies Pvt Ltd | Nov 2018 - Dec 2018</strong></li>
+            </div>
+            <div id="skills" class="section hidden">
+                <h1>Skills</h1>
                 <ul>
-                    <li>Developed web applications using Django, reducing database query times by 20%.</li>
-                    <li>Created responsive UIs using HTML, CSS, and JavaScript, increasing mobile compatibility by 30%.</li>
+                    <li>Big Data Technologies: Apache Spark, Hadoop, HDFS, Airflow, ETL pipelines, MongoDB, Neo4j</li>
+                    <li>Programming Languages: Python, PySpark, Scala, Java</li>
+                    <li>Cloud & DevOps: AWS, Docker, CI/CD pipelines, Git</li>
                 </ul>
-            </ul>
-        </section>
-
-        <!-- Projects Section -->
-        <section id="projects" class="info hidden">
-            <h2>My Projects</h2>
-            <ul>
-                <li><strong>Real-Time IoT Insights Hub | Apache Kafka, Spark Streaming, HDFS, Python | March 2023 – June 2023</strong></li>
+            </div>
+            <div id="about" class="section hidden">
+                <h1>About me</h1>
+                <p>I am skilled in Python, PySpark, Scala, and adept at managing terabytes of data across distributed systems.</p>
                 <ul>
-                    <li>Developed a real-time data streaming platform, processing over 2TB of data daily from IoT devices.</li>
-                    <li>Reduced data processing latency by 30%, enabling real-time decision-making for connected devices.</li>
+                    <li>Phone: 862-237-5382</li>
+                    <li>Email: <a href="mailto:srujit.v@gmail.com">srujit.v@gmail.com</a></li>
+                    <li>LinkedIn: <a href="https://linkedin.com/in/srujitvarasala">srujitvarasala</a></li>
+                    <li>GitHub: <a href="https://github.com/srujit12091997">srujit12091997</a></li>
+                    <li>Location: New York</li>
                 </ul>
-                <li><strong>Places of Interest | Apache Spark, Python, Neo4j, MongoDB, HDFS | January 2023 – May 2023</strong></li>
-                <ul>
-                    <li>Built a pipeline to process and analyze 500GB of geo-location data, improving insights by 30%.</li>
-                    <li>Stored and analyzed spatial relationships using Neo4j and visualized connections using Cypher queries.</li>
-                </ul>
-                <li><strong>Web Data Scraping and Analysis | Python, BeautifulSoup, Hadoop, HDFS, MongoDB | September 2020</strong></li>
-                <ul>
-                    <li>Developed a web scraper using BeautifulSoup, processing over 1TB of data using Hadoop MapReduce.</li>
-                    <li>Achieved a 60% increase in data processing efficiency and visualized trends using Matplotlib and Seaborn.</li>
-                </ul>
-            </ul>
-        </section>
-
-        <!-- Education Section -->
-        <section id="education" class="info hidden">
-            <h2>My Education</h2>
-            <ul>
-                <li><strong>Master of Science in Computer Science | New Jersey Institute of Technology | Jan 2023 – Present | CGPA: 3.0</strong></li>
-                <li><strong>Bachelor of Technology in Computer Science and Engineering | SRM Institute of Science and Technology | Aug 2016 – May 2020 | CGPA: 3.2</strong></li>
-            </ul>
-        </section>
-
-        <!-- About Me Section -->
-        <section id="about" class="info">
-          <div class="about-container">
-                  <div class="buttons">
-                      <button onclick="toggleSection('experience')">Experience</button>
-                      <button onclick="toggleSection('education')">Education</button>
-                      <button onclick="toggleSection('skills')">Skills</button>
-                  </div>
-                  <button class="about-me-button">About me</button>
-              </div>
-              <div class="about-details">
-                  <h1>About Me</h1>
-                  <ul>
-                      <li>Name: Srujit Varasala</li>
-                      <li>Experience: 3 Years</li>
-                      <li>Nationality: Indian</li>
-                      <li>Phone: (+1) (862)237-5382</li>
-                      <li>Email: <a href="mailto:srujit.v@gmail.com">srujit.v@gmail.com</a></li>
-                      <li>Languages: English, Telugu, Hindi and Kannada</li>
-                  </ul>
-              </div>
-          </div>
-      </section>
-      
-
-    <!-- Footer -->
+            </div>
+        </div>
+    </main>
     <footer>
         <p>&copy; 2024 Srujit Varasala. All rights reserved.</p>
-        <p>Email: <a href="mailto:srujit.v@gmail.com">srujit.v@gmail.com</a></p>
+        <p>Contact: <a href="mailto:srujit.v@gmail.com">srujit.v@gmail.com</a></p>
     </footer>
-
     <script src="script.js"></script>
 </body>
 </html>

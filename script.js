@@ -1,17 +1,10 @@
-document.querySelectorAll('nav a').forEach(link => {
-    link.addEventListener('click', function (e) {
-        e.preventDefault();
-        document.querySelectorAll('section').forEach(section => section.classList.add('hidden'));
-        const targetSection = document.querySelector(this.getAttribute('href'));
-        targetSection.classList.remove('hidden');
-        targetSection.classList.add('active');
+// Function to show the selected section and hide the others
+function showSection(sectionId) {
+    // Hide all sections
+    document.querySelectorAll('.section').forEach(section => {
+        section.classList.add('hidden');
     });
-});
-
-document.querySelectorAll('.btn').forEach(button => {
-    button.addEventListener('click', function () {
-        const sectionId = this.textContent.toLowerCase().replace(' ', '-');
-        document.querySelectorAll('section').forEach(section => section.classList.add('hidden'));
-        document.getElementById(sectionId).classList.remove('hidden');
-    });
-});
+    
+    // Show the selected section
+    document.getElementById(sectionId).classList.remove('hidden');
+}
