@@ -1,24 +1,30 @@
+/* Global Styles */
 body, html {
     margin: 0;
     padding: 0;
-    font-family: Arial, sans-serif;
+    font-family: 'Arial', sans-serif;
     background: #121212;
-    color: #fff;
+    color: white;
+    overflow-x: hidden; /* Prevents horizontal scroll */
+}
+
+.header, footer {
+    background-color: #333;
+    color: white;
+    padding: 1rem;
+    text-align: center;
 }
 
 .navbar {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 20px;
-    background-color: #333;
 }
 
 .navbar a, .navbar button {
-    color: #fff;
+    color: white;
     text-decoration: none;
-    margin-right: 20px;
-    padding: 10px;
+    padding: 0.5rem 1rem;
     border: none;
     background: none;
     cursor: pointer;
@@ -29,67 +35,88 @@ body, html {
     border-radius: 5px;
 }
 
-.logo {
-    font-size: 24px;
-    color: #0f0;
-}
-
+/* Sections */
 section {
     padding: 20px;
-    border-bottom: 1px solid #444;
+    border-top: 1px solid #444;
 }
 
-.buttons button {
-    background-color: #555;
-    color: #fff;
-    border: none;
-    padding: 10px 20px;
-    margin-right: 10px;
-    cursor: pointer;
-}
-
-.buttons button:hover {
-    background-color: #777;
+.active {
+    display: block;
 }
 
 .hidden {
     display: none;
 }
 
-.info {
-    padding: 20px;
-    margin-top: 10px;
-}
-
+/* About Me Section */
 .about-container {
     display: flex;
-    flex-direction: column;
+    justify-content: space-between;
+    padding: 20px;
+    background-color: #121212;
 }
 
-.about-details {
+.why-hire-me, .about-details {
+    flex: 1;
+    margin-right: 20px;
+}
+
+.why-hire-me h1, .about-details h1 {
+    color: #fff;
+}
+
+.buttons {
     margin-top: 20px;
 }
 
-.about-row {
-    display: flex;
-    justify-content: space-between;
-    margin-bottom: 10px;
+button {
+    display: block;
+    width: 100%;
+    padding: 10px;
+    margin-top: 10px;
+    background-color: #333;
+    color: white;
+    border: none;
+    cursor: pointer;
 }
 
-.about-row strong {
-    margin-right: 10px;
+button:hover {
+    background-color: #4CAF50;
 }
 
-a {
-    color: #4CAF50; /* Color for links to match the button color */
+button.about-me-button {
+    background-color: #4CAF50;
+    border-radius: 5px;
+    margin-top: 20px;
 }
 
-a:hover {
-    text-decoration: underline;
+.about-details ul {
+    list-style: none;
+    padding: 0;
 }
 
+.about-details li {
+    padding: 5px 0;
+}
+
+.about-details a {
+    color: #4CAF50;
+    text-decoration: none;
+}
+
+/* Footer Styles */
 footer {
     text-align: center;
     padding: 10px;
     background-color: #333;
+}
+
+@media (max-width: 600px) {
+    .navbar, .about-container {
+        flex-direction: column;
+    }
+    .why-hire-me, .about-details {
+        margin-right: 0;
+    }
 }
